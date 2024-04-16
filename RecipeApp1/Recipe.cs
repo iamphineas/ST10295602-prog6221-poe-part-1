@@ -130,6 +130,26 @@ namespace RecipeApp1
             // Display separator
             Console.WriteLine("*********************************");
         }
+
+        // Method to scale recipe by a factor
+        public void Scale()
+        {
+            Console.WriteLine("Enter scaling factor (0.5, 2, or 3):");
+            double factor;
+            // Prompt user to enter scaling factor
+            while (!double.TryParse(Console.ReadLine(), out factor) || !(factor == 0.5 || factor == 2 || factor == 3))
+            {
+                Console.WriteLine("Invalid input. Please enter 0.5, 2, or 3.");
+            }
+
+            // Scale each ingredient quantity
+            foreach (var ingredient in ingredients)
+            {
+                ingredient.Quantity *= factor;
+            }
+            // Inform user that recipe has been scaled
+            Console.WriteLine($"Recipe scaled by a factor of {factor}.");
+        }
     }
 }
 
