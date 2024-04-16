@@ -34,6 +34,10 @@
                 Console.WriteLine("6. Exit");
                 Console.WriteLine();
                 Console.WriteLine("*********************************");
+
+                // Get the user's choice and parse it as an integer.
+                int choice = int.Parse(Console.ReadLine());
+
             }
         }
     }
