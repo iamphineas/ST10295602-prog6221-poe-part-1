@@ -116,6 +116,20 @@ namespace RecipeApp1
             {
                 Console.WriteLine($"{ingredient.Quantity} {ingredient.Unit} of {ingredient.Name}");
             }
+
+            // Display steps
+            Console.WriteLine();
+            Console.WriteLine("*********************************");
+            Console.WriteLine("Steps:");
+
+            foreach (var step in steps)
+            {
+                Console.WriteLine(step.Description);
+            }
+
+            // Display separator
+            Console.WriteLine("*********************************");
         }
     }
 }
+
