@@ -71,3 +71,15 @@
         }
     }
 }
+//end
+/*--------------------code attribution--------------------
+ * The following method was taken from StackOverFlow:
+ * Author : Prasanth Jaya
+ * link: htpps://https://stackoverflow.com/questions/24443827/reading-an-integer-from-user-input
+ * int intTemp = Convert.ToInt32(Console.ReadLine());
+ * 
+ * The following method was taken from StackOverFlow:
+ * Author : Mark Byers
+ * link: htpps://https://stackoverflow.com/questions/2743260/is-it-possible-to-write-to-the-console-in-colour-in-net
+ * Console.BackgroundColor = ConsoleColor.Blue;
+  */
