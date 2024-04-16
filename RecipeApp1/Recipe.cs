@@ -161,6 +161,17 @@ namespace RecipeApp1
             // Inform user that quantities have been reset
             Console.WriteLine("Quantities reset to original values.");
         }
+
+        // Method to clear recipe data
+        public void ClearData()
+        {
+            ingredients = new Ingredient[0];
+            steps = new Step[0];
+            // Inform user that recipe data has been cleared
+            Console.WriteLine("Recipe data cleared");
+        }
     }
 }
+
+
 
