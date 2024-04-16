@@ -38,6 +38,35 @@
                 // Get the user's choice and parse it as an integer.
                 int choice = int.Parse(Console.ReadLine());
 
+                // Perform actions based on the user's choice.
+                switch (choice)
+                {
+                    case 1:
+                        recipe.EnterDetails();
+                        break;
+                    case 2:
+                        recipe.Display();
+                        break;
+                    case 3:
+                        recipe.Scale();
+                        break;
+                    case 4:
+                        recipe.ResetQuantities();
+                        break;
+                    case 5:
+                        recipe.ClearData();
+                        break;
+                    case 6:
+
+                        // Set the exit flag to true to terminate the loop and exit the program.
+                        exit = true;
+                        break;
+                    default:
+                        // Good coding practice: Provide clear error messages for invalid input.
+                        Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
+                        break;
+                }
+
             }
         }
     }
