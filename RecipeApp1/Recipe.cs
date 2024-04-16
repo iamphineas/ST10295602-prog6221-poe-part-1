@@ -103,5 +103,19 @@ namespace RecipeApp1
             Console.WriteLine("Recipe details entered successfully.");
             Console.WriteLine("*********************************");
         }
+        // Method to display recipe details
+        public void Display()
+        {
+            // Display recipe title
+            Console.WriteLine("Recipe:");
+            Console.WriteLine("*********************************");
+            // Display ingredients
+            Console.WriteLine("Ingredients:");
+
+            foreach (var ingredient in ingredients)
+            {
+                Console.WriteLine($"{ingredient.Quantity} {ingredient.Unit} of {ingredient.Name}");
+            }
+        }
     }
 }
