@@ -150,6 +150,17 @@ namespace RecipeApp1
             // Inform user that recipe has been scaled
             Console.WriteLine($"Recipe scaled by a factor of {factor}.");
         }
+
+        // Method to reset ingredient quantities to original values
+        public void ResetQuantities()
+        {
+            foreach (var ingredient in ingredients)
+            {
+                ingredient.ResetQuantity();
+            }
+            // Inform user that quantities have been reset
+            Console.WriteLine("Quantities reset to original values.");
+        }
     }
 }
 
